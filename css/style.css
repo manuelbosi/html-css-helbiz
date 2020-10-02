@@ -19,7 +19,7 @@ a, li{
 /* regole di debug */
 [class*="col-"] {
   min-height: 50px;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   border: solid 1px  #000;
 }
 
@@ -77,6 +77,8 @@ header {
 
 
 /* CORPO PAGINA */
+
+/* SEZIONE PRODOTTI */
 #product {
   margin: 40px 0;
   /* debug */
@@ -84,7 +86,7 @@ header {
   background-color: yellow;
   border: 1px solid black; */
 }
-.box {
+#product .box {
   width: 90%;
   margin: 0 auto;
   background-color: #fafafa;
@@ -99,14 +101,71 @@ header {
 #product .box .txt-info p {
   font-size: 25px;
   margin: 20px 0;
-
 }
 #product .box .txt-info a {
   font-size: 20px;
   font-weight: bold;
   color: rgb(0,112,200);
 }
-.txt-info img {
+#product .box .txt-info img {
   margin: 20px 0 0 0;
   max-width: 90%;
+}
+
+/* SEZIONE HOW-TO */
+#howto {
+  height: 50vh;
+  background-image: url("../img/howto-section-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#howto img {
+  padding: 6% 0;
+  max-width: 60%;
+}
+#howto .center-5 > div:nth-child(2)  {
+  text-align: center;
+}
+#howto .txt {
+  margin-top: 60vh;
+  margin-right: 20px;
+}
+#howto .txt .title {
+  padding-left: 60%;
+  font-size: 30px;
+}
+#howto #steps {
+  font-size: 15px;
+  color: #212529;
+  padding: 20px 20px
+}
+
+/*  */
+#smart-mobility {
+  margin-top: 15%;
+  background-color: red;
+}
+#smart-mobility .row > div:first-child {
+  background-image: url("../img/scooter-bg.jpg");
+  background-size: cover;
+  min-height: 500px;
+}
+#smart-mobility .cta {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+#smart-mobility .cta h1 {
+  font-size: 50px;
+}
+#smart-mobility .cta p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+#smart-mobility .cta a {
+  color: white;
+}
+#smart-mobility .row div:first-child .cta {
+  width: 50%;
+  margin: auto;
 }
