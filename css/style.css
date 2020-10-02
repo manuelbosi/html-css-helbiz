@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a, li{
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+}
+.center-10{
+  padding: 0 10%;
+
+}
+.center-5 {
+  padding: 0 5%;
+}
+
+/* regole di debug */
+[class*="col-"] {
+  /* min-height: 50px;
+  background-color: lightgreen; */
+  border: solid 1px  #000;
+}
+
+/* HEADER */
+header {
+  padding-top: 100px;
+}
+#nav-large {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+  padding: 20px 10%;
+  background-color: white;
+}
+#logo > a {
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+#navigation-menu {
+  padding: 5px;
+  text-align: right;
+}
+#navigation-menu li {
+  display: inline-block;
+  margin: 0 8px;
+}
+#navigation-menu li a {
+  font-size: 15px;
+}
+#nav-mobile {
+  display: none;
+}
+
+#jumbo {
+  padding-top: 150px;
+  min-height: 70vh;
+  text-align: center;
+  color: white;
+  background-image: url("../img/jumbotron-bg.webp");
+
+}
+#jumbo h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#jumbo p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+#jumbo a img {
+  width: 25%;
+}
+
+
+
+/* CORPO PAGINA */
+#product {
+  margin: 50px 0;
+  /* debug */
+  min-height: 200px;
+  background-color: yellow;
+  border: 1px solid black;
+}
