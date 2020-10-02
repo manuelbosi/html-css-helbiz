@@ -18,14 +18,14 @@ a, li{
 
 /* regole di debug */
 [class*="col-"] {
-  /* min-height: 50px;
-  background-color: lightgreen; */
+  min-height: 50px;
+  background-color: lightgreen;
   border: solid 1px  #000;
 }
 
 /* HEADER */
 header {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 #nav-large {
   position: fixed;
@@ -55,7 +55,6 @@ header {
 #nav-mobile {
   display: none;
 }
-
 #jumbo {
   padding-top: 150px;
   min-height: 70vh;
@@ -77,12 +76,37 @@ header {
 }
 
 
-
 /* CORPO PAGINA */
 #product {
-  margin: 50px 0;
+  margin: 40px 0;
   /* debug */
-  min-height: 200px;
+  /* min-height: 500px;
   background-color: yellow;
-  border: 1px solid black;
+  border: 1px solid black; */
+}
+.box {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+}
+#product .box .txt-info h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+#product .box .txt-info p {
+  font-size: 25px;
+  margin: 20px 0;
+
+}
+#product .box .txt-info a {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0,112,200);
+}
+.txt-info img {
+  margin: 20px 0 0 0;
+  max-width: 90%;
 }
