@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.container-full-width {
+  width: 100%;
+}
+
 .row::after {
   content: "";
   display: table;
