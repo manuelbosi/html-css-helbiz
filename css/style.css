@@ -60,8 +60,9 @@ header {
   min-height: 70vh;
   text-align: center;
   color: white;
-  background-image: url("../img/jumbotron-bg.webp");
-
+  background-image: url("../img/jumbotron-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 #jumbo h1 {
   font-size: 50px;
@@ -144,13 +145,13 @@ header {
 #smart-mobility {
   margin-top: 15%;
 }
+#smart-mobility > .row > *{
+
+}
 #smart-mobility .row > div:first-child {
   background-image: url("../img/scooter-bg.jpg");
   background-size: cover;
   margin-bottom: 30px;
-}
-#smart-mobility .row > div:nth-child(2) {
-  background-color: #4f5c67;
 }
 #smart-mobility .cta {
   text-align: center;
@@ -182,10 +183,77 @@ header {
 #smart-mobility .row .cta-app img {
   max-width: 40%;
 }
-#app {
-  border-left: 15px solid white;
+#smart-mobility .row .txt-info {
+  width: 99%;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  overflow:hidden;
+}
+#smart-mobility .row .txt-info,
+#smart-mobility .row .txt-info a {
+  color: white;
+}
+#smart-mobility .row .txt-info > * {
+  margin: 15px 0;
+}
+#smart-mobility .row .txt-info h1 {
+  font-size: 40px;
+}
+#smart-mobility .row .txt-info p {
+  font-size: 25px;
+}
+#smart-mobility .row .txt-info a {
+  font-size: 20px;
+  margin: 0 15px;
+}
+#iphone-app .box,
+#find-us .box {
+  margin: 0 auto;
+}
+#iphone-app {
+  padding-right:20px;
+}
+#iphone-app .box {
+  background: linear-gradient(0deg, rgba(2,0,36,0.9164799708946079) 0%, rgba(79,92,103,1) 57%, rgba(77,89,101,1) 93%);
 }
 #find-us {
-  background-image: url("../img/find-us-bg.jpg");
-  min-height: 300px;
+  padding-left: 20px;
 }
+#find-us .box {
+  background-image: url("../img/find-us-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*  HELBIZ FAMILY  */
+#helbiz-family {
+  margin: 20px 0;
+  /* debug */
+  background-image: url("../img/pachwork.jpg");
+  background-color: blue;
+  min-height: 350px;
+  position: relative;
+}
+#helbiz-family .row .txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 40px 80px;
+  font-size: 25px;
+  background-color: white;
+}
+#helbiz-family .row .txt h1 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+#helbiz-family .row .txt .fab {
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+
+/*  */
