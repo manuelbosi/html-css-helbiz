@@ -256,4 +256,16 @@ header {
 }
 
 
-/*  */
+/*  FOOTER */
+footer {
+
+  /* debug */
+  background-color: black;
+  min-height: 800px;
+}
+footer .row div {
+  padding: 20px 10px;
+  min-height: 500px;
+  border: 2px solid black;
+  background-color: red;
+}
