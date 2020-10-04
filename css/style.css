@@ -76,11 +76,6 @@ header {
     margin: 2px 0;
     background-color: black;
   }
-  #nav-mobile:hover + #navigation-menu {
-    display: block;
-    height: 100vh;
-    z-index: 99999;
-  }
 }
 #jumbo {
   min-height: 70vh;
