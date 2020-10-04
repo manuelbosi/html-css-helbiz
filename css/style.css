@@ -69,13 +69,17 @@ header {
     border: 1px solid black;
     border-radius: 3px;
     cursor: pointer;
-
   }
   #nav-mobile span {
     display: block;
     height: 4px;
     margin: 2px 0;
     background-color: black;
+  }
+  #nav-mobile:hover + #navigation-menu {
+    display: block;
+    height: 100vh;
+    z-index: 99999;
   }
 }
 #jumbo {
