@@ -55,14 +55,48 @@ header {
 #nav-mobile {
   display: none;
 }
+@media all and (max-width:992px) {
+  #navigation-menu {
+    display: none;
+  }
+  #nav-mobile {
+    z-index: 1000;
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 5px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+
+  }
+  #nav-mobile span {
+    display: block;
+    height: 4px;
+    margin: 2px 0;
+    background-color: black;
+  }
+}
 #jumbo {
-  padding-top: 150px;
   min-height: 70vh;
-  text-align: center;
   color: white;
   background-image: url("../img/jumbotron-bg.jpg");
   background-size: cover;
   background-position: center;
+}
+#jumbo .row > div {
+  position: relative;
+}
+#jumbo .cta {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 #jumbo h1 {
   font-size: 50px;
@@ -290,13 +324,12 @@ footer .row:last-child {
   text-align: center;
 }
 footer .row:nth-child(2) {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
 }
 footer .txt a img {
   max-width: 10%;
-  border: 1px solid grey;
+  border: 1px solid #484848;
   border-radius: 10px;
   margin: 0 10px;
 }
