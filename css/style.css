@@ -258,14 +258,45 @@ header {
 
 /*  FOOTER */
 footer {
-
-  /* debug */
   background-color: black;
-  min-height: 800px;
+}
+footer .row:first-child {
+  padding-top: 60px;
+}
+footer a,
+footer h1,
+footer h4 {
+  color: white;
 }
 footer .row div {
-  padding: 20px 10px;
-  min-height: 500px;
-  border: 2px solid black;
-  background-color: red;
+  padding: 20px 5px;
+}
+footer .txt.logo {
+  padding: 0;
+  margin: 0;
+}
+footer > .row ul li {
+  margin: 15px 0;
+}
+footer > .row ul li a{
+  color: grey;
+}
+footer #social .txt .fab{
+  width: calc((100% / 5) - 5px);
+  text-align: center;
+  font-size: 20px;
+}
+footer .row:last-child {
+  text-align: center;
+}
+footer .row:nth-child(2) {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+
+}
+footer .txt a img {
+  max-width: 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 0 10px;
 }
