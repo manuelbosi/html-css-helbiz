@@ -146,7 +146,13 @@ header {
   margin: 20px 0 0 0;
   max-width: 90%;
 }
+@media all and (max-width:768px) {
 
+  #product .box {
+    margin: 20px 0;
+  }
+
+}
 /* SEZIONE HOW-TO */
 #howto {
   height: 50vh;
@@ -174,13 +180,45 @@ header {
   color: #212529;
   padding: 20px 20px
 }
+/* MOBILE */
+@media all and (max-width:768px) {
+  #howto img {
+    padding: 6% 0;
+    max-width: 30%;
+  }
+  #howto .txt {
+    margin-top: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  #howto .txt .title {
+    padding-left: 0;
+    font-size: 30px;
+  }
+}
+/* TABLET */
+@media all and (min-width:769px) and (max-width:992px) {
+  #howto img {
+    padding: 50% 0;
+    max-width: 60%;
+  }
+  #howto .center-5 > div:nth-child(2)  {
+    text-align: center;
+  }
+  #howto .txt {
+    margin-top: 60vh;
+    margin-right: 20px;
+  }
+  #howto .txt .title {
+    padding-left: 60%;
+    font-size: 30px;
+  }
+}
+
 
 /* SEZIONE SMART MOBILITY */
 #smart-mobility {
   margin-top: 15%;
-}
-#smart-mobility > .row > *{
-
 }
 #smart-mobility .row > div:first-child {
   background-image: url("../img/scooter-bg.jpg");
@@ -254,6 +292,16 @@ header {
 #find-us {
   padding-left: 20px;
 }
+@media all and (max-width:768px) {
+  #iphone-app {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+  #find-us {
+    padding-left: 0;
+  }
+}
+
 #find-us .box {
   background-image: url("../img/find-us-bg.jpg");
   background-repeat: no-repeat;
@@ -314,6 +362,14 @@ footer > .row ul li {
 }
 footer > .row ul li a{
   color: grey;
+}
+@media all and (max-width:768px) {
+  footer {
+    text-align: center;
+  }
+  footer .row div {
+    padding: 10px 5px;
+  }
 }
 footer #social .txt .fab{
   width: calc((100% / 5) - 5px);
